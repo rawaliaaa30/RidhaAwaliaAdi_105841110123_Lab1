@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+</head>
+<body>
+
+<h2>Fungsi Mengembalikan Nilai Integer</h2>
+<p id="result1"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean</h2>
+<p id="result2"></p>
+
+<h2>Fungsi Mengembalikan Nilai String</h2>
+<p id="result3"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean (Operator)</h2>
+<p id="result4"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean (Operator)</h2>
+<p id="result5"></p>
+
+<script>
+    // Fungsi yang mengembalikan nilai bertipe integer
+    function soal1(a, b) {
+        return a + b;
+    }
+
+    // Fungsi yang mengembalikan nilai bertipe boolean
+    function soal2(a, b) {
+        return a && b;
+    }
+
+    // Fungsi yang mengembalikan nilai bertipe string
+    function soal3(a, b) {
+        return a + "  " + b;
+    }
+
+    // Fungsi yang mengembalikan nilai bertipe boolean menggunakan operator
+    function soal4(a, b) {
+        return a >= b;
+    }
+
+    // Fungsi yang mengembalikan nilai bertipe boolean menggunakan operator
+    function soal5(a, b) {
+        return a <= b;
+    }
+
+    // Memanggil dan menampilkan hasil fungsi-fungsi
+    document.getElementById("result1").innerHTML = "Hasil: " + soal1(2, 1);
+    document.getElementById("result2").innerHTML = "Hasil: " + soal2(false, false);
+    document.getElementById("result3").innerHTML = "Hasil: " + soal3("Ridha awalia ", "adi");
+    document.getElementById("result4").innerHTML = "Hasil: " + soal4('10', '5');
+    document.getElementById("result5").innerHTML = "Hasil: " + soal5(10, '5');
+</script>
+
+</body>
+</html>
