@@ -20,6 +20,7 @@
 <h2>Fungsi Mengembalikan Nilai Boolean (Operator)</h2>
 <p id="result5"></p>
 
+
 <script>
     // Fungsi yang mengembalikan nilai bertipe integer
     function soal1(a, b) {
@@ -52,6 +53,35 @@
     document.getElementById("result3").innerHTML = "Hasil: " + soal3("Ridha awalia ", "adi");
     document.getElementById("result4").innerHTML = "Hasil: " + soal4('10', '5');
     document.getElementById("result5").innerHTML = "Hasil: " + soal5(10, '5');
+
+let nilaiMahasiswaRidha = [90, 85, 95, 100, 80];
+nilaiMahasiswaRidha.map(nilai, index) {
+    console.log("nilai mahasiswa ke " + index + " adalah " + nilai);
+};
+//contoh kasus untuk if else
+let nilai = 90;
+if (nilai >= 90) {
+    document.write("Nilai kamu A");
+}else if (nilai >= 85) {
+    document.write("Nilai kamu B");
+}else if (nilai >= 95) {
+    document.write("Nilai kamu C");
+}else if (nilai >= 100) {
+    document.write("Nilai kamu Nol");
+}
+//game check jodoh
+let namaCewe = "Arina";
+let namaCowok = "Awal";
+let hasil = Math.floor(Math.random() 71) + 30;
+if (hasil >= 80) {
+    document.write("Selamat " + namaCewe + " dan " namaCowok + " adalah jodoh sejati ");
+} else if (hasil >= 70) {
+    document.write("Selamat " + namaCewe + " dan " namaCowok + " adalah yang di sengajai ");
+} else if (hasil >= 60) {
+    document.write("Selamat " namaCewe + " dan " + namaCowok + " adalah jodoh palsu ");
+} else {
+    document.write(" Maaf " namaCewe + " dan + namaCowok + " tidak jodoh ");
+
 </script>
 
 </body>
